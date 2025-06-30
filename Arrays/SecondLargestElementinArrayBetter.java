@@ -20,7 +20,7 @@ public class SecondLargestElementinArrayBetter {
        int largest = Integer.MIN_VALUE;
        int slargest = Integer.MIN_VALUE;
 
-       if(arr.length == 0 || arr.length<1){
+       if(arr.length == 0 || arr.length<2){
            return -1;
        }
 
