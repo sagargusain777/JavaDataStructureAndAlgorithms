@@ -11,18 +11,19 @@ public class RemoveDuplicatesFromSortedArray {
     public static int removeDuplicates(int [] arr){
         // taking a pointer at index 0
 
-        int j = 0;
+        int i = 0;
 
         // Taking a loop  which start from one since the first element is on the place
-        //Also we should start the loop from  j+1  , so that every time we will not start from 1 since let say index 1 element comes in the place so why to watch it again
-        for(int i = j+1;i<arr.length;i++){
+        //Also we should start the loop from  j = 1 , since the first element will be its initial place
+
+        for(int j = 1;j<arr.length;j++){
 
             if(arr[i] != arr[j]){
-                j++;
-                arr[j] = arr[i];
+                i++;
+                arr[i] = arr[j];
             }
         }
-        return  j+1;
+        return  i+1;
 
 
 
