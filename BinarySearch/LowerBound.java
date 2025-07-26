@@ -26,13 +26,13 @@ public class LowerBound {
 
     }
     public static int lowerBoundElement(int [] arr, int target){
-        int answer = -1;
+        int answer = arr.length;
         int start = 0;
         int end = arr.length-1;
 
 
         //Case when the target is greater than the last element we have return the array length
-        if(arr[end]< target) return arr.length;
+       // if(arr[end]< target) return arr.length; Just take the answer as array length this will also check this if statement
 
         while (start<=end){
 
